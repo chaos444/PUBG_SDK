@@ -706,25 +706,19 @@ enum class EDetachmentRule : uint8_t
 };
 
 
-// Enum Engine.ESpawnActorCollisionHandlingMethod
-enum class ESpawnActorCollisionHandlingMethod : uint8_t
+// Enum Engine.EAutoReceiveInput
+enum class EAutoReceiveInput : uint8_t
 {
-	Undefined                      = 0,
-	AlwaysSpawn                    = 1,
-	AdjustIfPossibleButAlwaysSpawn = 2,
-	AdjustIfPossibleButDontSpawnIfColliding = 3,
-	DontSpawnIfColliding           = 4,
-	ESpawnActorCollisionHandlingMethod_MAX = 5
-};
-
-
-// Enum Engine.EInputConsumeOptions
-enum class EInputConsumeOptions : uint8_t
-{
-	ICO_ConsumeAll                 = 0,
-	ICO_ConsumeBoundKeys           = 1,
-	ICO_ConsumeNone                = 2,
-	ICO_MAX                        = 3
+	Disabled                       = 0,
+	Player0                        = 1,
+	Player1                        = 2,
+	Player2                        = 3,
+	Player3                        = 4,
+	Player4                        = 5,
+	Player5                        = 6,
+	Player6                        = 7,
+	Player7                        = 8,
+	EAutoReceiveInput_MAX          = 9
 };
 
 
@@ -739,19 +733,15 @@ enum class EActorUpdateOverlapsMethod : uint8_t
 };
 
 
-// Enum Engine.EAutoReceiveInput
-enum class EAutoReceiveInput : uint8_t
+// Enum Engine.ESpawnActorCollisionHandlingMethod
+enum class ESpawnActorCollisionHandlingMethod : uint8_t
 {
-	Disabled                       = 0,
-	Player0                        = 1,
-	Player1                        = 2,
-	Player2                        = 3,
-	Player3                        = 4,
-	Player4                        = 5,
-	Player5                        = 6,
-	Player6                        = 7,
-	Player7                        = 8,
-	EAutoReceiveInput_MAX          = 9
+	Undefined                      = 0,
+	AlwaysSpawn                    = 1,
+	AdjustIfPossibleButAlwaysSpawn = 2,
+	AdjustIfPossibleButDontSpawnIfColliding = 3,
+	DontSpawnIfColliding           = 4,
+	ESpawnActorCollisionHandlingMethod_MAX = 5
 };
 
 
@@ -771,6 +761,16 @@ enum class EVectorQuantization : uint8_t
 	RoundOneDecimal                = 1,
 	RoundTwoDecimals               = 2,
 	EVectorQuantization_MAX        = 3
+};
+
+
+// Enum Engine.EInputConsumeOptions
+enum class EInputConsumeOptions : uint8_t
+{
+	ICO_ConsumeAll                 = 0,
+	ICO_ConsumeBoundKeys           = 1,
+	ICO_ConsumeNone                = 2,
+	ICO_MAX                        = 3
 };
 
 
